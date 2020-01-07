@@ -7,4 +7,4 @@ nom : sitePHASE2
 readme : oui
 privé : oui
 dossiers : img, audio, css, fichier, video
-fichiers ; index.html, style.css
+fichiers ; index.html, style.css et indexTEST.html
