@@ -210,7 +210,7 @@ footer {
     width: 20%;
     color: white;
 }
-
+ 
 #zoning1 section {
     height: 525px;
     width: 80%;
@@ -297,7 +297,7 @@ footer {
 #zoning4 nav {
     height: 50px;
     background: #bed4e2;
-
+    border: none;
 }
 
 #zoning4 section {
@@ -325,7 +325,8 @@ footer {
 
 #zoning5 nav {
     background: olive;
-    height: 50px;        
+    height: 50px;
+    border: none;       
 }
 
 #zoning5 .section {
@@ -351,13 +352,97 @@ footer {
     height: 90px;
 }
 
+/* le zoning 6  */
+
+#zoning6 {
+    width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+#zoning6 header {
+    background: #40a497;
+    height: 180px;
+}
+
+.haut1  {
+    background: #203562;
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.haut2 {
+    background: #3e588f;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.haut3 {
+    background: #203562;    
+    float: left;
+    width: 25%;
+    height: 100%;
+}
 
 
+#zoning6 nav {
+    background: #0B5269;
+    height: 80px;
+    border: none;
+}
 
+#zoning6 aside {
+    background: #446878;
+    float: left;
+    width: 25%;
+    height: 650px;
+}
 
+.slideshow {
+    background: #314a52;
+    height: 250px;
+}
 
+#zoning6 .a {
+    background: #c0c5cd;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
 
+#zoning6 .b {
+    background: #203562;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
 
+#zoning6 section {
+    float: left;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+}
+#zoning6 .c, .e {
+    background: #c0c5cd;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+#zoning6 .d, .f {
+    background: #203562;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+#zoning6 footer {
+    background: #0B5269;
+}
 
 /*********************************** FLOAT  ***********************************/
 
