@@ -1,5 +1,60 @@
 /*********************************** feuille de style du site phase 2 WebForce 3  ***********************************/
 
+* {
+    /* voir https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing  */
+    box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
 /* google fonts utilisés dans le style : oswald, lemonada, anton */
 body {
     background-image: url(../img/concrete-texture.png);
@@ -17,7 +72,7 @@ h1 {
 h2 {
     font-size: 35px;
     color:#2c3e50;
-    /* padding: 20px; */
+    padding: 20px;
     font-weight: bold;
     /* ombre portée  sur le lettrage*/
     text-shadow: 1px 1px 2px #aaa;
@@ -26,7 +81,7 @@ h2 {
 h3 {
     font-size: 22px;
     color: #2c3e50;
-    /* padding: 15px; */
+    padding: 15px;
     /* ombre portée  sur le lettrage*/
     text-shadow: 1px 1px 2px #aaa;
 }
@@ -55,7 +110,7 @@ header {
     background-color: #2c3e50;
     width: 25%;
     float: left;
-    /* padding: 15px; */
+    padding: 15px;
     text-align: center;
 }
 
@@ -136,7 +191,7 @@ footer {
 
 /* le zoning 1  */
 #zoning1 {
-    background: #ffd6d6;
+    background: red;
     border: 1px solid #2c3e50;
     width: 798px;
     margin: auto;
@@ -194,6 +249,115 @@ footer {
     background: orange;
     height: 500px;
 }
+
+/* le zoning n°3  */
+
+#zoning3 {
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    /* border: 10px solid red; */
+}
+
+#zoning3  section {
+    height: 525px;
+    float: left;
+    width: 50%;
+    background: #205d67;
+    margin: 0;
+    padding: 0;
+    /* border: 10px solid #fff; */
+}
+
+#zoning3 footer {
+    height: 70px;
+    float: left;
+    width: 100%;
+    background: #d8ebb5;
+    color: black;
+}
+
+/* le zoning 4  */
+
+#zoning4 {
+    background: #fff;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    border: 20px dotted red;
+}
+
+#zoning4 header {
+    height: 100px;
+    background: #10828c;
+}
+
+#zoning4 nav {
+    height: 50px;
+    background: #bed4e2;
+
+}
+
+#zoning4 section {
+    height: 200px;
+    background: red;
+    border: 20px dotted olive;
+}
+
+#zoning4 footer {
+    height: 100px;
+    background:#6acafc;
+}
+
+/* le zoning 5  */
+
+#zoning5 {
+    background: #ECEBE9;
+    border: 2px solid black;
+}
+
+#zoning5 header {
+    background: #F8D771;
+    height: 100px;    
+}
+
+#zoning5 nav {
+    background: olive;
+    height: 50px;        
+}
+
+#zoning5 .section {
+    padding: 0;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+    float: left;
+    width: 50%;
+    height: 250px; 
+}
+
+#zoning5 .z1, .z4 {
+    background: #F8D771;    
+}
+
+#zoning5 .z2, .z3 {
+    background: #fce38a;    
+}
+
+#zoning5 footer {
+    background: red;
+    height: 90px;
+}
+
+
+
+
+
+
+
+
 
 /*********************************** FLOAT  ***********************************/
 
