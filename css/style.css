@@ -492,4 +492,48 @@ footer {
     font-style: italic;
 }
 
+/*********************************** LA PAGE DES IMAGES  ***********************************/
 
+
+.imageFond {
+    background: url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+    /* https://developer.mozilla.org/fr/docs/Web/CSS/background-size  */
+}
+
+.imageFond p {
+    width: 75%;
+    margin: 100px auto 200px auto;
+    padding: 20px;
+    background: rgba(255,255,255, 0.60);
+    font-size: 120%;
+    border-radius: 10px;
+}
+/* on pointe cette image spécifique  */
+img[src="../img/toureiffel.jpg"] {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+/* animations sur les images  */
+
+.rotationImg {
+    text-align: center;
+}
+
+.image {
+    margin: 20px;
+    border: 5px solid #eee;
+    box-shadow: 4px 4px 4px rgba(71, 35, 201, 0.877);
+    transition: 1s;
+}
+
+.image:hover {
+    transform: rotate(-7deg);
+    border: 15px solid #eee;
+}
+
+.rotation360:hover {
+    transform: rotate(-360deg);
+}
