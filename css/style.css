@@ -450,12 +450,46 @@ footer {
     clear: both;
 }
 
+/*********************************** LA PAGE TEXTE  ***********************************/
 
+.oswald p {
+    font-family: 'Oswald', sans-serif;
+}
 
+/*********************************** LA PAGE SELECTEUR  ***********************************/
 
-
-
-
-
+.select p {
+    color: red;
+}
+.select p:first-of-type {
+    color: pink;
+}
+.select p:last-of-type {
+    color: pink;
+}
+.select p:nth-of-type(5), .select p:nth-of-type(6) {
+    color:black;
+}
+.select div:not(.zoneB) {
+    font-weight: bold;
+}
+.select .zoneA {
+    color: #f56f56;
+}
+.select .zoneB {
+    color: #996633;
+}
+.select .zoneB .couleurBleu {
+    color: blue;
+    font-size: 16px;
+}
+.select #zoneC {
+    color: #98f32f;
+}
+.select #zoneD span {
+    color: #32ff32;
+    font-size: 30px;
+    font-style: italic;
+}
 
 
