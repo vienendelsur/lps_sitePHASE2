@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Mon premier site HTML CSS - Pisola">
     <meta name="keywords" content="HTML, CSS, pisola, site HTML CSS">
-    <title>Site Phase 2 // Texte</title> 
+    <title>Site Phase 2 // Formulaire</title> 
     <!-- lien vers le kit de fontawesome  -->
     <script src="https://kit.fontawesome.com/74331d6c42.js" crossorigin="anonymous"></script>
     <!-- lien des typos en CDN  -->
@@ -39,7 +39,7 @@
     <!-- zone du menu, les liens pour naviguer sur le site  -->
     <nav>
         <a href="../index.html" title="Site Phase 2 // Accueil, la structure">Structure</a>
-        <a href="texte.html" title="Site Phase 2 // Texte" class="active">Texte</a>
+        <a href="texte.html" title="Site Phase 2 // Texte">Texte</a>
         <a href="selecteur.html" title="Site Phase 2 // Sélecteur">Sélecteur</a>
         <a href="image.html" title="Site Phase 2 // Image">Image</a>
         <a href="position.html" title="Site Phase 2 // ">Position</a>
@@ -47,25 +47,64 @@
         <a href="tableau.html" title="Site Phase 2 // Tableau">Tableau</a>
         <a href="liste.html" title="Site Phase 2 // Liste">Liste</a>
         <a href="" title="Site Phase 2 // ">Lien & menu</a>
-        <a href="formulaire.html" title="Site Phase 2 // Formulaire">Formulaire</a>
+        <a href="formulaire.html" title="Site Phase 2 // Formulaire" class="active">Formulaire</a>
         <a href="" title="Site Phase 2 // ">Multimédia</a>
         <a href="" title="Site Phase 2 // ">Animation</a>
     </nav>
 
     <!-- contenu principal  -->
     <main>
-        <h2>Texte</h2>
-            <section>
-                <h3>Titre de la première section</h3>
-                <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
-                <p><strong>At, iure, alias. Nam vitae doloremque molestiae nesciunt, saepe ea, ratione nihil sed dolore soluta omnis impedit quod eveniet, cupiditate sequi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis deserunt fugiat consequuntur saepe repudiandae, natus eligendi perspiciatis, sunt eveniet qui magnam at rerum veniam voluptatum voluptas. Harum, deleniti, praesentium!</strong></p>
-            </section>
+        <h2>Formulaire</h2>
 
-            <section class="oswald">
-                <h3>Titre de la section n°2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                At, iure, alias. Nam vitae doloremque molestiae nesciunt, saepe ea, ratione nihil sed dolore soluta omnis impedit quod eveniet, cupiditate sequi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis deserunt fugiat consequuntur saepe repudiandae, natus eligendi perspiciatis, sunt eveniet qui magnam at rerum veniam voluptatum voluptas. Harum, deleniti, praesentium!</p>
-            </section>
+
+
+        <section class="formulaire">
+            <!-- action : manière de circulation des données -->
+            <!-- action : url de destination, le fichier php qui va servir à traiter les données -->
+            <!-- enctype : permet d'envoyer un fichier correctement, l'encodage du formulaire -->
+            <form action="url_de_destination.php" method="post" enctype="multipart/form-data">
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" name="pseudo" id="pseudo" required><br>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Taper votre pseudo"><br>
+                
+                <label for="password">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp"><br>
+
+                <label for="email">Email *</label>
+                <input type="email" name="email" id="email"><br>
+            
+                <label for="cv">Votre CV *</label>
+                <input type="file" name="cv" id="cv">br
+            
+                <p>Quel sont vos fruits préférés ?</p>
+                <label for="orange">Orange</label>
+                <input type="checkbox" id="orange" value="orange" checked>
+
+                <label for="fraise">Fraise</label>
+                <input type="checkbox" id="fraise" value="fraise">
+                
+                <label for="poire">Poire</label>
+                <input type="checkbox" id="poire" value="poire"><br>
+
+                <label for="code_postal">Code postal</label>
+                <input type="text" id="code_postal" name="code_postal" maxlength="5" pattern="[0-9]{5}" title="5 chiffres entre 0 et 9"><br>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="25"></textarea><br>
+                
+                <input type="submit" name="envoyer" value="Envoyer">
+                <input type="reset" name="annuler" value="Annuler">
+            
+            </form>
+
+        </section>
+
+
+
+
+            
     </main>
 
     <!-- pied de page  -->

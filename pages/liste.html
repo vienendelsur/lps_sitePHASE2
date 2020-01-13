@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Mon premier site HTML CSS - Pisola">
     <meta name="keywords" content="HTML, CSS, pisola, site HTML CSS">
-    <title>Site Phase 2 // Texte</title> 
+    <title>Site Phase 2 // Liste</title> 
     <!-- lien vers le kit de fontawesome  -->
     <script src="https://kit.fontawesome.com/74331d6c42.js" crossorigin="anonymous"></script>
     <!-- lien des typos en CDN  -->
@@ -39,13 +39,13 @@
     <!-- zone du menu, les liens pour naviguer sur le site  -->
     <nav>
         <a href="../index.html" title="Site Phase 2 // Accueil, la structure">Structure</a>
-        <a href="texte.html" title="Site Phase 2 // Texte" class="active">Texte</a>
-        <a href="selecteur.html" title="Site Phase 2 // Sélecteur">Sélecteur</a>
+        <a href="texte.html" title="Site Phase 2 // Texte">Texte</a>
+        <a href="selecteur.html" title="Site Phase 2 // ">Sélecteur</a>
         <a href="image.html" title="Site Phase 2 // Image">Image</a>
         <a href="position.html" title="Site Phase 2 // ">Position</a>
         <a href="zoning.html" title="Site Phase 2 // le zoning">Zoning</a>
-        <a href="tableau.html" title="Site Phase 2 // Tableau">Tableau</a>
-        <a href="liste.html" title="Site Phase 2 // Liste">Liste</a>
+        <a href="tableau.html" title="Site Phase 2 // ">Tableau</a>
+        <a href="liste.html" title="Site Phase 2 // Liste" class="active">Liste</a>
         <a href="" title="Site Phase 2 // ">Lien & menu</a>
         <a href="formulaire.html" title="Site Phase 2 // Formulaire">Formulaire</a>
         <a href="" title="Site Phase 2 // ">Multimédia</a>
@@ -54,18 +54,52 @@
 
     <!-- contenu principal  -->
     <main>
-        <h2>Texte</h2>
-            <section>
-                <h3>Titre de la première section</h3>
-                <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
-                <p><strong>At, iure, alias. Nam vitae doloremque molestiae nesciunt, saepe ea, ratione nihil sed dolore soluta omnis impedit quod eveniet, cupiditate sequi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis deserunt fugiat consequuntur saepe repudiandae, natus eligendi perspiciatis, sunt eveniet qui magnam at rerum veniam voluptatum voluptas. Harum, deleniti, praesentium!</strong></p>
-            </section>
-
-            <section class="oswald">
-                <h3>Titre de la section n°2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                At, iure, alias. Nam vitae doloremque molestiae nesciunt, saepe ea, ratione nihil sed dolore soluta omnis impedit quod eveniet, cupiditate sequi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis deserunt fugiat consequuntur saepe repudiandae, natus eligendi perspiciatis, sunt eveniet qui magnam at rerum veniam voluptatum voluptas. Harum, deleniti, praesentium!</p>
-            </section>
+        <h2>Listes</h2>
+        <section>
+            <h3>Les listes ul</h3>
+            <ul class="fruit">
+                <li class="fruit" ><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Orange</li>
+                <li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Fraise</li>
+                <li><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Poire</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Listes imbriquées</h3>
+            <ul class="imbriquee">
+                <li class="europe">Europe
+                    <ul>
+                        <li>France</li>
+                        <li>Italie</li>
+                        <li>Espagne</li>
+                    </ul>
+                </li>
+                <li class="asie">Asie
+                    <ul>
+                        <li>Chine</li>
+                        <li>Japon</li>
+                        <li>Laos</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Listes ordonnées</h3>
+            <ol>
+                <li>Html/Css</li>
+                <li>PHP/SQL</li>
+                <li>JS/JQUERY</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Listes de définitions</h3>
+            <dl>
+                <dt>Foxtrot</dt>
+                <dd>Danse des années folles</dd>
+                <dt>France</dt>
+                <dd>Pays d'Europe</dd>
+                
+            </dl>
+        </section>
     </main>
 
     <!-- pied de page  -->

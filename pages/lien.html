@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Mon premier site HTML CSS - Pisola">
+    <meta name="keywords" content="HTML, CSS, pisola, site HTML CSS">
+    <title>Site Phase 2 // Liens</title> 
+    <!-- lien vers le kit de fontawesome  -->
+    <!-- <script src="https://kit.fontawesome.com/74331d6c42.js" crossorigin="anonymous"></script> -->
+    <!-- lien des typos en CDN  -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald&display=swap" rel="stylesheet">      -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   
+   
+    <!-- zone haute de la page  -->
+    <header>
+        <!-- la div pour le logo  -->
+        <div id="logo"><!-- ancre du haut de la page  -->
+            
+            <a href="#logo"><!-- lien sur un bouton pour remonter en haut de la page le bouton sera affiché en bas de page (évidement) grâce au CSS--><button type="button"><i class="fas fa-arrow-circle-up"></i></button></a>
+
+            <img src="../img/logo.png" alt="Mon premier site HTML CSS">
+        </div>
+        <!-- la div pour le titre du site  -->
+        <div id="slogan"><h1>Mon premier site en HTML & CSS</h1></div>
+        <!-- la div des liens vers les réseaux sociaux  -->
+        <div id="social">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <!-- je rétablis le flux  -->
+        <div class="clear"></div>
+    </header>
+
+    <!-- zone du menu, les liens pour naviguer sur le site  -->
+    <nav>
+        <a href="../index.html" title="Site Phase 2 // Accueil, la structure">Structure</a>
+        <a href="texte.html" title="Site Phase 2 // Texte">Texte</a>
+        <a href="selecteur.html" title="Site Phase 2 // Sélecteur">Sélecteur</a>
+        <a href="image.html" title="Site Phase 2 // Image">Image</a>
+        <a href="position.html" title="Site Phase 2 // ">Position</a>
+        <a href="zoning.html" title="Site Phase 2 // le zoning">Zoning</a>
+        <a href="tableau.html" title="Site Phase 2 // Tableau">Tableau</a>
+        <a href="liste.html" title="Site Phase 2 // Liste">Liste</a>
+        <a href="lien.html" title="Site Phase 2 // Lien" class="active">Lien & menu</a>
+        <a href="formulaire.html" title="Site Phase 2 // Formulaire">Formulaire</a>
+        <a href="" title="Site Phase 2 // ">Multimédia</a>
+        <a href="" title="Site Phase 2 // ">Animation</a>
+    </nav>
+
+    <!-- contenu principal  -->
+    <main>
+        <h2>Liens et menus</h2>
+
+        <div class="ancre">
+            <a href="#lien">Les liens</a>
+            <a href="#menu">Menu ou navigation</a>
+            <a href="#menuDeroulant">Menu déroulant</a>
+        </div>
+
+        <section id="lien">
+            <h3>Les liens</h3>
+                <!--Dans le lien nous aurons aussi (title="xxx") pour ouvrir fenêtre d'info au passage de la souris sur le lien et (target="_blank") pour envoyer sur un autre onglet"-->
+                <a href="https://codepen.io" title="Se rendre sur le site de CodePen" target="_blank">CodePen</a> is a social development environment for front-end designers and developers.<br>
+                <a href="http://www.google.fr" target="_blank">Google</a> le moteur de recherche.<br>
+                <a href="fichier/">Télécharger le planning</a><br>
+                <!-- On peut ajouter juste un download dans le lien pour rendre téléchargeable le fichier -->
+                <a href="fichier/" target="_blank">Voir le planning</a><br>
+                <!-- Pour imprimer ma page -->
+                <a href="#" onclick="window.print()">Imprimer la page</a><br>
+                <!--Pour rendre cliquable une image et renvoyer sur le lien inséré dessus-->
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.ico" alt=""></a><br>
+                <!-- Inséré le lien juste dans " ici " qui renvoi sur une autre page de mon site -->
+                Cliquer <a href="../index.html">ici</a> pour vous rendre sur la page d'accueil.
+        </section>
+
+
+        <section id="menu">
+            <h3>Un menu</h3>
+                <nav>
+                    <!-- ul>li*4>a -->
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Parcours</a></li>
+                        <li><a href="#">Réalisations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+        </section>
+        
+        <section id="menuDeroulant">
+            <h3>Un menu déroulant</h3>
+
+                <nav>
+
+                    <ul class="niveau1">
+
+                        <li><a href="#">Accueil</a></li>
+
+                        <li class="sousMenu"><a href="#">Formations</a>
+                            <!-- ul.>li*4 -->
+                            <ul class="niveau2">
+                                <li><a href="#">Etudiants</a></li>
+                                <li><a href="#">Emploi du temps</a></li>
+                                <li><a href="#">recherche d'emploi</a></li>
+                                <li><a href="#">Documents#</a></li>
+                            </ul>
+                        
+                        </li>
+
+                        <li><a href="#">Informations</a></li>
+
+                        <li class="sousMenu"><a href="#">Cours</a>
+                        
+                            <ul class="niveau2">
+                                <li><a href="#">Internet</a></li>
+                                <li><a href="#">HTML CSS</a></li>
+                                <li><a href="#">CMS</a></li>
+                                <li><a href="#">Stats</a></li>
+                                <li><a href="#">Réseaux sociaux</a></li>
+                                <li><a href="#">Référencement</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Cahier des charges</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li><a href="#">Mon CV</a></li>
+
+                    </ul>
+
+                </nav>
+
+        </section>
+    </main>
+
+    <!-- pied de page  -->
+    <footer>
+       <p><i class="fas fa-shoe-prints"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+    </footer>
+
+</body>
+</html>
