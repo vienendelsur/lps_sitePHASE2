@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zoning 7 correction</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+    
+    body {
+        background: whitesmoke;
+        color: white;
+    }
+    
+    .bleu {
+        background: paleturquoise;
+    }
+
+    .rose {
+        background: pink;
+    }
+
+    .jaune {
+        background: yellow;
+    }
+
+    .gris {
+        background: lightgrey;
+    }
+
+    #conteneur {
+        background: paleturquoise;
+        width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header {
+        background: olive;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    nav {
+        background: thistle;
+        height: 30px;
+    }
+
+    footer {
+        background: orange;
+        height: 200px;
+        line-height: 200px;
+    }
+
+    .grande_zone {
+        float: left;
+        height: 250px;
+        width: 480px;
+        
+    }
+
+    .petite_zone {
+        float: left;
+        width: 240px;
+        height: 125px;
+        /* bidouille sur le texte mais si on a que du texte dans nos div, on met en line-heigth la valeur de la hauteur de la div  */
+        line-height: 125px;
+        color: cornflowerblue;
+        /* pour les bordures et le padding : si je dois utiliser box-sizing: border-box; je le fais directement sur l'élément et je le fais si mes largeurs ou hauteurs sont en % :   
+        si je dois le faire sur un élément avec hauteur et largeur en px je ne le fais qu'une seule fois sur la page */
+        border: 1px solid white;
+        box-sizing: border-box;
+        padding: 5px;
+
+    }
+
+    .clear {
+        clear: both;
+    }
+    </style>
+</head>
+<body>
+    <div id="conteneur">
+
+        <header><p>Zone du haut</p></header>
+        <nav>Menu ou navigation</nav>
+
+        <section>
+            <div class="grande_zone bleu">
+                <div class="petite_zone"><h2>Petite zone 1 ... les autres suivents</h2></div>
+                <div class="petite_zone">Petite zone 2</div>
+                <div class="petite_zone">Petite zone 3</div>
+                <div class="petite_zone">Petite zone 4</div>
+            </div>
+            <div class="grande_zone rose">
+                <div class="petite_zone">Petite zone 5</div>
+                <div class="petite_zone">Petite zone 6</div>
+                <div class="petite_zone">Petite zone 7</div>
+                <div class="petite_zone">Petite zone 8</div>
+            </div>
+            <div class="grande_zone jaune">
+                <div class="petite_zone">Petite zone 9</div>
+                <div class="petite_zone">Petite zone 10</div>
+                <div class="petite_zone">Petite zone 11</div>
+                <div class="petite_zone">Petite zone 12</div>
+            </div>
+            <div class="grande_zone gris">
+                <div class="petite_zone">Petite zone 13</div>
+                <div class="petite_zone">Petite zone 14</div>
+                <div class="petite_zone">Petite zone 15</div>
+                <div class="petite_zone"><a href="mailto:patrick.isola@lepoles.com">Contactez-moi</a></div>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/validator$link"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Valide !" /></a>
+           
+            </p>
+    </footer>
+
+    </div>
+</body>
+</html>
