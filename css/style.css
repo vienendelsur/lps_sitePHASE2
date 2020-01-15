@@ -849,3 +849,183 @@ iframe[src="https://www.youtube.com/embed/Gcqu2V5lBZo"] {
 .youtube {
     padding: 100px;
 }
+
+/* LA PAGE POSITION  */
+
+
+/* position absolute  */
+
+.centre {
+    background: #33cccc;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.absolute {
+    background: orange;
+    width: 100px;
+    height: 100px;
+/* élément de position absolue est positionné par rapport à son ancêtre  */
+    position: absolute;
+    left: 10%;
+    top: 24%;
+}
+
+/* position relative  */
+
+.relative {
+    background: #2d5c7f;
+    width: 400px;
+    height: 400px;
+
+    position: relative;
+    top: 100px;
+    bottom: 10px;
+    left: 100px;
+}
+
+.relative div {
+    background: orangered;
+    width: 150px;
+    height: 50px;
+/* la position est absolue par rapport à son parent relatif  */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.relative div p {
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* le bouton pour remonter en haut de page */
+
+button {
+    font-size: 350%;
+    background: transparent;
+    border: none;
+    color: #2c3e50;
+
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+
+/* les pourcentages */
+
+.trente {
+    width: 30%;
+    background: #3c1b1f;
+    padding: 20px;
+
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.cinquante {
+    width: 50%;
+    background: #b2b2b2;
+    padding: 20px;
+    margin-top: 7px;
+
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.cent {
+    width: 100%;
+    background: #6e0b0b;
+    padding: 20px;
+    margin-top: 7px;
+
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* le float  */
+
+.float {
+    height: 170px;
+    width: 170px;
+    background: #F8D771;
+    margin: 10px;
+    border: 2px solid darkred;
+    padding-top: 2px;
+    float: left;
+
+    text-align: center;
+    font-size: 22px;
+    color: orangered;
+}
+
+.dernier {
+    height: 170px;
+    width: 170px;
+    background: #F8D771;
+    margin: 10px;
+    border: 2px solid darkred;
+    padding-top: 2px;
+    /* float: left; */
+
+    text-align: center;
+    font-size: 22px;
+    color: orangered;
+}
+
+/* exercice sur le float */
+
+.zone {
+    height: 70px;
+    background: orchid;
+}
+
+.zone1, .zone2, .zone3, .zone4 {
+    height: 250px;
+    /* border: 1px solid blue; */
+    width: 25%;
+    float: left;
+}
+
+.zone1 {
+    background: crimson;
+}
+
+.zone2 {
+    background: olive;
+}
+
+.zone3 {
+    background: yellowgreen;
+}
+
+.zone4 {
+    background: pink;
+}
+
+/* FLEXBOX */
+
+.flex {
+    /* display flex les éléments "s'alignent" dans le parent  */
+    display: flex;
+    /* les éléments occupent la largeur du parent avec un espace égal autour */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row-reverse;
+}
+
+.flex div {
+    width: 150px;
+    height: 150px;
+    background: darkblue;
+    text-align: center;
+    font-size: 50px;
+    color:white;
+}

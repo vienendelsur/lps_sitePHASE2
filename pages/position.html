@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Mon premier site HTML CSS - Pisola">
+    <meta name="keywords" content="HTML, CSS, pisola, site HTML CSS">
+    <title>Site Phase 2 // Position</title> 
+    <!-- lien vers le kit de fontawesome  -->
+    <script src="https://kit.fontawesome.com/74331d6c42.js" crossorigin="anonymous"></script>
+    <!-- lien des typos en CDN  -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   
+   
+    <!-- zone haute de la page  -->
+    <header>
+        <!-- la div pour le logo  -->
+        <div id="logo"><!-- ancre du haut de la page  -->
+            
+            <a href="#logo">
+                <!-- lien sur un bouton pour remonter en haut de la page le bouton sera affiché en bas de page (évidement) grâce au CSS--><button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+            </a>
+
+            <img src="../img/logo.png" alt="Mon premier site HTML CSS">
+        </div>
+        <!-- la div pour le titre du site  -->
+        <div id="slogan"><h1>Mon premier site en HTML & CSS</h1></div>
+        <!-- la div des liens vers les réseaux sociaux  -->
+        <div id="social">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <!-- je rétablis le flux  -->
+        <div class="clear"></div>
+    </header>
+
+    <!-- zone du menu, les liens pour naviguer sur le site  -->
+    <nav>
+        <a href="../index.html" title="Site Phase 2 // Accueil, la structure">Structure</a>
+        <a href="texte.html" title="Site Phase 2 // Texte">Texte</a>
+        <a href="selecteur.html" title="Site Phase 2 // Sélecteur">Sélecteur</a>
+        <a href="image.html" title="Site Phase 2 // Image">Image</a>
+        <a href="position.html" title="Site Phase 2 // Position" class="active">Position</a>
+        <a href="zoning.html" title="Site Phase 2 // le zoning">Zoning</a>
+        <a href="tableau.html" title="Site Phase 2 // Tableau">Tableau</a>
+        <a href="liste.html" title="Site Phase 2 // Liste">Liste</a>
+        <a href="" title="Site Phase 2 // ">Lien & menu</a>
+        <a href="formulaire.html" title="Site Phase 2 // Formulaire">Formulaire</a>
+        <a href="" title="Site Phase 2 // ">Multimédia</a>
+        <a href="" title="Site Phase 2 // ">Animation</a>
+    </nav>
+
+    <!-- contenu principal  -->
+    <main>
+        <h2>Position</h2>
+
+
+        <section>
+            <h3>Centrer un élément de type block</h3>
+            <div class="centre"></div>
+        </section>
+
+        <section>
+            <h3>Position Absolute</h3>
+            <p>Carré ORANGE ! Regarde en haut camarade !</p>
+            <div class="absolute"></div>
+        </section>
+
+        <section>
+            <h3>Position relative</h3>
+            <div class="relative">
+                <div><p>15 janvier 2020</p></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Les pourcentages</h3>
+            <div class="trente">30 %</div>
+            <div class="cinquante">50 %</div>
+            <div class="cent">100 %</div>
+        </section>
+
+        <section>
+            <h3>L'attribut float</h3>
+            <div class="float">1</div>
+            <div class="float">2</div>
+            <div class="float">3</div>
+            <div class="float">4</div>
+            <div class="float clear">5</div>
+            <div class="float">6</div>
+            <div class="float">7</div>
+            <div class="float clear">8</div>
+            <div class="float">9</div>
+            <div class="dernier clear">10</div>
+        </section>
+
+
+        <section>
+            <h3>Exercice sur le float</h3>
+            <div class="zone"></div>
+            <div class="zone1"></div>
+            <div class="zone2"></div>
+            <div class="zone3"></div>
+            <div class="zone4"></div>
+            <div class="zone clear"></div>
+        </section>
+
+        <section>
+            <h3>Flexbox</h3>
+                <article class="flex">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </article>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    </main>
+
+    <!-- pied de page  -->
+    <footer>
+       <p><i class="fas fa-shoe-prints"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+    </footer>
+
+</body>
+</html>
