@@ -54,7 +54,7 @@ header {
 }
 
 .bas p {
-    bottom: 0;
+    line-height: 50px;
 }
 
 .clear {
