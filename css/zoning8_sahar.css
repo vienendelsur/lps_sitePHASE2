@@ -1,0 +1,62 @@
+/* feuille de style pour le zoning 8  */
+
+body {
+    background: yellowgreen;
+}
+
+#conteneur {
+    width: 800px;
+    height: 600px;
+    background: gray;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background: red;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+
+}
+
+.gauche, .droite {
+    background: blue;
+    width: 150px;
+    height: 500px;
+    float: left;
+    line-height: 500px;
+}
+
+.milieu {
+    background: green;
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+.zone1, .zone2, .zone3, .zone4, .zone5 {
+    background: pink;
+    height: 450px;
+    width: 100px;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.bas {
+    background: yellow;
+    height: 50px;
+    position: relative;
+    right: 0;
+    /* top: 450px; */
+    bottom: 0;
+}
+
+.bas p {
+    bottom: 0;
+}
+
+.clear {
+    clear: both;
+}
