@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Mon premier site HTML CSS - Pisola">
+    <meta name="keywords" content="HTML, CSS, pisola, site HTML CSS">
+    <title>Site Phase 2 // Animation</title> 
+    <!-- lien vers le kit de fontawesome  -->
+    <script src="https://kit.fontawesome.com/74331d6c42.js" crossorigin="anonymous"></script>
+    <!-- lien des typos en CDN  -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   
+   
+    <!-- zone haute de la page  -->
+    <header>
+        <!-- la div pour le logo  -->
+        <div id="logo"><!-- ancre du haut de la page  -->
+            
+            <a href="#logo"><!-- lien sur un bouton pour remonter en haut de la page le bouton sera affiché en bas de page (évidement) grâce au CSS--><button type="button"><i class="fas fa-arrow-circle-up"></i></button></a>
+
+            <img src="../img/logo.png" alt="Mon premier site HTML CSS">
+        </div>
+        <!-- la div pour le titre du site  -->
+        <div id="slogan"><h1>Mon premier site en HTML & CSS</h1></div>
+        <!-- la div des liens vers les réseaux sociaux  -->
+        <div id="social">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <!-- je rétablis le flux  -->
+        <div class="clear"></div>
+    </header>
+
+    <!-- zone du menu, les liens pour naviguer sur le site  -->
+    <nav>
+        <a href="../index.html" title="Site Phase 2 // Accueil, la structure">Structure</a>
+        <a href="texte.html" title="Site Phase 2 // Texte">Texte</a>
+        <a href="selecteur.html" title="Site Phase 2 // Sélecteur">Sélecteur</a>
+        <a href="image.html" title="Site Phase 2 // Image">Image</a>
+        <a href="position.html" title="Site Phase 2 // ">Position</a>
+        <a href="zoning.html" title="Site Phase 2 // le zoning">Zoning</a>
+        <a href="tableau.html" title="Site Phase 2 // Tableau">Tableau</a>
+        <a href="liste.html" title="Site Phase 2 // Liste">Liste</a>
+        <a href="lien.html" title="Site Phase 2 // Lien">Lien & menu</a>
+        <a href="formulaire.html" title="Site Phase 2 // Formulaire">Formulaire</a>
+        <a href="multimedia.html" title="Site Phase 2 // ">Multimédia</a>
+        <a href="animation.html" title="Site Phase 2 // Animation" class="active">Animation</a>
+    </nav>
+
+    <!-- contenu principal  -->
+    <main>
+
+        <h2>Les animations</h2>
+        <section>
+            <h3>Infobulle</h3>
+            <div class="infoBulle">
+                <p>
+                    <a href="#">Passez la souris ! <span>Salut je suis une pop-up !! </span></a>
+                </p>
+                <p>
+                    <a href="#">Ici aussi ! <span>Salut je suis une autre !</span></a>
+                </p>
+                <p>
+                    <a href="#">Une fois encore ! <span>Et encore une !</span></a>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Effets de survol avec transitions et filtres CSS</h3>
+            <ul class="imgEffets">
+                <li><img src="../img/survol_img1.jpg" alt="montagne"></li>
+                <li><img src="../img/survol_img2.jpg" alt="soleil couchant et une barque"></li>
+                <li><img src="../img/survol_img3.jpg" alt="un oiseau au bord de l'eau"></li>
+                <li><img src="../img/survol_img4.jpg" alt="forêt en automne"></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Rotation d'un menu en CSS 3</h3>
+            <article id="menuRotation">
+                <dl class="menu">
+
+                    <dt class="btnRot">Partager</dt>
+                    <dd><a href="#">...</a></dd>
+                    <dd><a href="#">Instagram</a></dd>
+                    <dd><a href="#">Facebook</a></dd>
+                    <dd><a href="#">Twitter</a></dd>
+
+                </dl>
+            </article>
+        </section> 
+        <!-- VOIR  -->
+
+    </main>
+
+    <!-- pied de page  -->
+    <footer>
+       <p><i class="fas fa-shoe-prints"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+    </footer>
+
+</body>
+</html>
